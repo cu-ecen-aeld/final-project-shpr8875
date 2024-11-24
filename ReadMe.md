@@ -10,7 +10,7 @@
 - Use Yocto to create a customized build for the Raspberry Pi 3B platform.
 
 ## Source Code Organization
-- The **Yocto build environment** will be hosted at [Yocto-Climate-Change-Monitoring-Repo](cu-ecen-aeld/final-project-Induja21).
+- The **Yocto build environment** will be hosted at [Yocto-Climate-Change-Monitoring-Repo](https://github.com/cu-ecen-aeld/final-project-Induja21).
 - The **MQTT communication and sensor data processing code** will be hosted in a separate repository at [Climate-Monitoring-App](https://github.com/cu-ecen-aeld/final-project-shpr8875).
 
 ## Group Overview
