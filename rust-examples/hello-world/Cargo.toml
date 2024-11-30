@@ -1,0 +1,5 @@
+[package]
+
+name = "rust-hello-world-custom"
+version = "0.0.1"
+authors = ["Induja Narayanan <n.induja@gmail.com>"]
