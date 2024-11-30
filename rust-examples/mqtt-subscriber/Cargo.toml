@@ -1,0 +1,9 @@
+[package]
+name = "mqtt_subscriber"
+version = "0.1.0"
+authors = ["Induja Narayanan <n.induja@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+# MQTT client library for Rust
+paho-mqtt = "0.12.5"
