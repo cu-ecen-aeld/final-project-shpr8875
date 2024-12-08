@@ -1,7 +1,6 @@
 import time
 import fcntl
 import struct
-import bmp180sensor
 from ctypes import c_short
 
 # I2C settings
@@ -76,27 +75,4 @@ def display_string(string, line=1):
 # Initialize LCD
 lcd_init()
 
-# Display the message  on the first line
-#message = "Hello from Shweta"
 
-# Infinite loop to continuously display the message on the first line
-while True:
-    try:
-        # Display the message "Hello from Shweta" on the first line
-        #display_string(message, line=1)
-        temp, pressure, altitude = bmp180sensor.readBmp180()
-
-        # Displaying in two lines
-        line1 = f"T:{temp:.1f}C P:{pressure//1000}kPa"
-        line2 = f"Alt:{altitude:.2f}m"
-
-        # Display data on LCD
-        display_string(line1, line=1)
-        display_string(line2, line=2)
-        
-        time.sleep(2)  # Wait for 2 second before refreshing
-
-    except KeyboardInterrupt:
-        # Exit loop on keyboard interrupt
-        lcd_clear()
-        break

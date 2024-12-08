@@ -47,7 +47,6 @@ try:
 
         # Publish the message to the topic
         client.publish(topic, sensor_data)
-        #print("Message published: " + sensor_data)
         
         print(f"Message published: {sensor_data}")
  

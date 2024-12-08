@@ -26,7 +26,6 @@ def on_connect(client, userdata, flags, rc):
 
 # Define the callback for incoming messages
 def on_message(client, userdata, msg):
-    #print("Message received: " + msg.payload.decode())  # Print received message
 
    # Decode the message payload (assumed to be the sensor data string)
     sensor_data = msg.payload.decode()
