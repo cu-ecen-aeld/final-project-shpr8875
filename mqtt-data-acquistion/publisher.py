@@ -9,6 +9,7 @@
 
 import time
 import paho.mqtt.client as mqtt
+import bmp180sensor
 
 # Broker details
 hostname = "10.0.0.167"  # Broker address (use "localhost" for local broker or IP of remote broker)
@@ -35,12 +36,21 @@ client.loop_start()
 try:
     while True:
         # Simulate sensor data (replace with actual sensor reading)
-        sensor_data = "Temperature: 25.5C, Humidity: 60%"  # Example sensor data
+        #sensor_data = "Temperature: 25.5C, Humidity: 60%"  # Example sensor data
+
+
+	# Get sensor data from the BMP180 sensor
+        temp, pressure, altitude = bmp180sensor.readBmp180()
+
+        # Display the sensor data into a string
+        sensor_data = f"Temperature: {temp:.1f}C, Pressure: {pressure//1000}kPa, Altitude: {altitude:.2f}m"
 
         # Publish the message to the topic
         client.publish(topic, sensor_data)
-        print("Message published: " + sensor_data)
-
+        #print("Message published: " + sensor_data)
+        
+        print(f"Message published: {sensor_data}")
+ 
         # Wait for 5 seconds before sending the next message
         time.sleep(5)
 
