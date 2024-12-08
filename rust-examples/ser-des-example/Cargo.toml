@@ -1,0 +1,13 @@
+[package]
+name = "ser-des-example"
+version = "0.1.0"
+authors = ["Induja Narayanan <n.induja@gmail.com>"]
+edition = "2018"
+repository = "https://github.com/cu-ecen-aeld/final-project-shpr8875/tree/main/rust-examples/ser-des-example"
+homepage="https://github.com/cu-ecen-aeld/final-project-Induja21"
+description = "A simple serializer deserializer example"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
