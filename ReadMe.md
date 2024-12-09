@@ -6,7 +6,7 @@
 ### Project Goals:
 - Efficiently monitor environmental conditions (temperature and humidity).
 - Communicate sensor data between devices over MQTT.
-- Display real-time sensor data on UART on the second Raspberry Pi.
+- Display real-time sensor data on LCD on the second Raspberry Pi.
 - Use Yocto to create a customized build for the Raspberry Pi 3B platform.
 
 ## Source Code Organization
