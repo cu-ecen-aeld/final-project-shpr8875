@@ -1,3 +1,11 @@
+/**
+ * @file bmp180sensor.py
+ * @author Shweta Prasad
+ * 
+ * References:
+ * 1. https://www.circuitbasics.com/raspberry-pi-i2c-lcd-set-up-and-programming/
+ * 2. https://www.kernel.org/doc/Documentation/i2c/dev-interface
+ */
 import time
 import fcntl
 import struct
