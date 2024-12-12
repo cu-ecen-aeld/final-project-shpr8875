@@ -1,5 +1,5 @@
 /**
- * @file bmp180sensor.py
+ * @file lcd_interface.py
  * @author Shweta Prasad
  * 
  * References:
