@@ -1,3 +1,11 @@
+/**
+ * @file bmp180sensor.py
+ * @author Shweta Prasad
+ * 
+ * References:
+ * 1. https://www.theengineeringprojects.com/2023/06/how-to-interface-bmp180-air-pressure-sensor-with-pi-4.html
+ * 2. https://www.kernel.org/doc/Documentation/i2c/dev-interface
+ */
 import time
 import fcntl
 import struct
